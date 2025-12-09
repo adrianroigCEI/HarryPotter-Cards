@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glotón</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="app__head">
+            <h1>Glotón</h1>
+            <h2 id="points">0</h2>
+            <h2 id="showLevel">LVL 1</h2>
+        </div>
+        <i id="gloton" class="ri-emotion-unhappy-fill"></i>
+        <div class="app__foot">
+            <button id="btn-subir-nivel" onclick="subirNivel()" class="btn"><i class="ri-fire-fill"></i></button>
+            <button id="btn-alimentar" onclick="alimentar()" class="btn">Alimentar</button>
+        </div>
+    </div>
+</body>
+</html>

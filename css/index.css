@@ -1,0 +1,97 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+}
+
+body {
+    padding: 2rem;
+    height: 100vh;
+}
+
+#app {
+    background: #D94B1C;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100%;
+
+    & .app__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & h1 {
+        font-size: 5rem;
+    }
+
+    & i {
+        font-size: 3rem;
+        transition: 3s;
+        
+    }
+
+    & button {
+        background: #66240D;
+        padding: 1rem 2rem;
+        border-radius: .3rem;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: black;
+            color: #D94B1C;
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: scale(1.05);
+            opacity: .7;
+        }
+    }
+
+    & .app__foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        position: relative;
+
+        & #btn-subir-nivel {
+            background-color: transparent;
+            border: solid 1px white;
+            font-size: .8rem;
+            position: absolute;
+            top: -5rem;
+
+            &:hover {
+                background-color: white;
+
+                & i {
+                color: #D94B1C;
+                }
+            }
+            & i {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
